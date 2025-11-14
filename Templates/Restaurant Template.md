@@ -6,7 +6,5 @@ type:
 loc:
 rating:
 created:
-  "{ date }":
 last:
-  "{ date }":
 ---

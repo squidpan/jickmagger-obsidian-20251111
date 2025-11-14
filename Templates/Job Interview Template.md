@@ -5,10 +5,9 @@ type:
   - "[[Job Interviews]]"
 org:
 people: []
-date:
-  "{ date }":
 role:
 rating:
+date:
 ---
 ## Questions and topics
 

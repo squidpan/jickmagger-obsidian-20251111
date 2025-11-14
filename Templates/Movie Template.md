@@ -8,8 +8,8 @@ cast: []
 runtime:
 rating:
 year:
-last: {{date}}
 imdbId:
 via:
+last:
 ---
 

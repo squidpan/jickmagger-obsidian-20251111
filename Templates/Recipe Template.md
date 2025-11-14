@@ -8,9 +8,7 @@ author: []
 url:
 rating:
 created:
-  "{ date }":
 last:
-  "{ date }":
 ---
 ## Ingredients
 

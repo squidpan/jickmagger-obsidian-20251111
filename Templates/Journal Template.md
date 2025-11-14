@@ -1,6 +1,6 @@
 ---
-created: {{date}}
 tags:
   - note
   - journal
+created:
 ---

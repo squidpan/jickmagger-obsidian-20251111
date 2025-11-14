@@ -4,7 +4,6 @@ categories:
 type: []
 address:
 rating:
-created: {{date}}
 url:
 year:
 price:
@@ -12,4 +11,5 @@ sqft:
 lotsqft:
 loc: []
 status:
+created:
 ---
