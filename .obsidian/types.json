@@ -52,6 +52,7 @@
     "pages": "number",
     "acquired": "date",
     "title": "text",
-    "subject": "text"
+    "subject": "text",
+    "apps": "multitext"
   }
 }
