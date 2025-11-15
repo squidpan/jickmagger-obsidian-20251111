@@ -26,12 +26,17 @@ You will learn how to set up the following tools on your computer:
 ```code
 # Retrieve used commands - WSL Ubuntu on Windows 11
 #
-pl@NYC-WI-902H3J3:~/pjs/vaults$ history | egrep 'helm|kubectl'
+pl@NYC-WI-902H3J3:~/pjs/repos/helm-fbte$ history | egrep 'helm|kubectl|minikube|docker' > helm-commands-history.txt
+
+   10  docker run -d -p 80:8080 swaggerapi/swagger-editor
+  108  cd k8s-minikube/
+  110  vi intall-docker-ubuntu-wsl-env.sh
   111  helm get notes local-wp | grep VERSION
-  ## Following error
-  ##
+  113  cd /mnt/c/pjs/k8s-minikube/
   115  helm install local-wp bitnami/wordpress --version=27.1.8         -- set "mariadb.auth.roorPassword=myawesomepassword"         -- set "mariadb.auth.password=myuserpassword"
-  
+  116  helm install local-wp bitnami/wordpress --version=27.1.8         -- set "mariadb.auth.roorPassword=myawesomepassword"         -- set "mariadb.auth.password=myuserpassword"
+  117  helm install local-wp bitnami/wordpress --version=27.1.8         -- set "mariadb.auth.roorPassword=myawesomepassword"         -- set "mariadb.auth.password=myuserpassword"
+  119  helm install local-wp bitnami/wordpress --version=27.1.8 -- set "mariadb.auth.rootPassword=myawesomepassword" -- set "mariadb.auth.password=myuserpassword"
   120  kubectl get secret local-wp-wordpress -o jsonpath='{.data.wordpress-password}' | base64 -d
   121  helm show values
   122  helm show values bitnami/wordpress
@@ -45,6 +50,7 @@ pl@NYC-WI-902H3J3:~/pjs/vaults$ history | egrep 'helm|kubectl'
   132  kubectl describe secret local-wp-mariadb
   142  mkdir helm-course
   143  cd helm-course/
+  145  cd /mnt/c/pjs/k8s-minikube/
   147  kubectl get secret local-wp-mariadb
   148  kubectl get pod --watch
   149  kubectl describe secret local-wp-mariadb
@@ -73,12 +79,21 @@ pl@NYC-WI-902H3J3:~/pjs/vaults$ history | egrep 'helm|kubectl'
   175  helm get notes
   176  helm get notes local-wp
   178  vi helm-install-local-wp.sh
+  182  cd k8s-minikube/
+  184  vi intall-docker-ubuntu-wsl-env.sh 
   185  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
   186  chmod +x kubectl
   187  sudo mv kubectl /usr/local/bin/
+  188  vi intall-docker-ubuntu-wsl-env.sh 
+  189  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  190  sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+  191  vi intall-docker-ubuntu-wsl-env.sh 
+  192  minikube start --driver=docker
+  193  minikube status
   194  kubectl version
   195  kubectl get pod -a
   196  kubectl get pod -A
+  197  vi intall-docker-ubuntu-wsl-env.sh 
   198  $ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
   199  $ chmod 700 get_helm.sh
   200  $ ./get_helm.sh
@@ -88,6 +103,7 @@ pl@NYC-WI-902H3J3:~/pjs/vaults$ history | egrep 'helm|kubectl'
   206  chmod 700 get_helm.sh
   207  $ ./get_helm.sh
   208  ./get_helm.sh
+  209  vi intall-docker-ubuntu-wsl-env.sh 
   210  helm version
   211  helm repo add bitnami https://charts.bitnami.com/bitnami
   212  helm repo update
@@ -132,10 +148,29 @@ pl@NYC-WI-902H3J3:~/pjs/vaults$ history | egrep 'helm|kubectl'
   253  kubectl expose deploy local-wp-wordpress --type=NodePort
   254  kubectl expose deploy local-wp-wordpress --type=NodePort --name=local-wp
   255  kubectl get svc
+  256  minikube service local-wp
+  259  ls -l intall-docker-ubuntu-wsl-env.sh
+  260  cd /mnt/c/pjs/k8s-minikube/
+  261  ls -l intall-docker-ubuntu-wsl-env.sh
+  262  cat intall-docker-ubuntu-wsl-env.sh
+  263  minikube start --driver=docker
   288  ls helm-course/
   289  mv helm-course/ repos/
   305  history | egrep 'helm|kubectl'
-pl@NYC-WI-902H3J3:~/pjs/vaults$
+  306  history | egrep 'minikube|docker'
+  308  ls -l /mnt/c/pjs/k8s-minikube/
+  313  ls -l helm-course/
+  314  mkdir helm-fbte
+  315  cp -p /mnt/c/pjs/k8s-minikube/ helm-fbte/
+  316  cd helm-
+  317  rmdir helm-course/
+  318  cd helm-fbte/
+  320  cp -p /mnt/c/pjs/k8s-minikube/* helm-fbte/
+  321  cp -p /mnt/c/pjs/k8s-minikube/* .
+  323  history | egrep 'helm|kubectl|minikube|docker'
+  324  history | egrep 'helm|kubectl|minikube|docker' > helm-commands-history.txt
+
+pl@NYC-WI-902H3J3:~/pjs/repos/helm-fbte$
 ```
 
 
