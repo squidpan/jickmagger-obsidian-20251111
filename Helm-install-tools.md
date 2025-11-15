@@ -3,6 +3,7 @@ categories:
   - "[[Lessons]]"
 tags:
   - lesson
+  - udemy
 author: []
 url: ""
 topics:
@@ -13,8 +14,9 @@ title:
 last: 2025-11-14
 subject: "Helm: Install docker minikube kubectl"
 ---
-# Summary
-Helm: The Definitive Guide from Beginner to Master is a Udemy course on [[Helm]].
+# Source
+Udemy  on [[Helm]] - Helm: The Definitive Guide from Beginner to Master
+
 You will learn how to set up the following tools on your computer:
 - docker
 - minikube
