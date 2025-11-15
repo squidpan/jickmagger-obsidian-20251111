@@ -11,7 +11,7 @@ topics:
 created: 2025-11-14
 title:
 last: 2025-11-14
-subject: "Helm: Install tools"
+subject: "Helm: Install docker minikube kubectl"
 ---
 # Summary
 Helm: The Definitive Guide from Beginner to Master is a Udemy course on [[Helm]].
@@ -20,13 +20,16 @@ You will learn how to set up the following tools on your computer:
 - minikube
 - kubectl
 
+# Commands - initial
 ```code
+# Retrieve used commands - WSL Ubuntu on Windows 11
+#
 pl@NYC-WI-902H3J3:~/pjs/vaults$ history | egrep 'helm|kubectl'
   111  helm get notes local-wp | grep VERSION
+  ## Following error
+  ##
   115  helm install local-wp bitnami/wordpress --version=27.1.8         -- set "mariadb.auth.roorPassword=myawesomepassword"         -- set "mariadb.auth.password=myuserpassword"
-  116  helm install local-wp bitnami/wordpress --version=27.1.8         -- set "mariadb.auth.roorPassword=myawesomepassword"         -- set "mariadb.auth.password=myuserpassword"
-  117  helm install local-wp bitnami/wordpress --version=27.1.8         -- set "mariadb.auth.roorPassword=myawesomepassword"         -- set "mariadb.auth.password=myuserpassword"
-  119  helm install local-wp bitnami/wordpress --version=27.1.8 -- set "mariadb.auth.rootPassword=myawesomepassword" -- set "mariadb.auth.password=myuserpassword"
+  
   120  kubectl get secret local-wp-wordpress -o jsonpath='{.data.wordpress-password}' | base64 -d
   121  helm show values
   122  helm show values bitnami/wordpress
