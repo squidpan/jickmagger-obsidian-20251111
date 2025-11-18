@@ -22,7 +22,7 @@ You will learn how to set up the following tools on your computer:
 - minikube
 - kubectl
 
-# Commands - initial
+# docker - kubectl - helm
 
 ```code
 
@@ -54,10 +54,218 @@ $ chmod 700 get_helm.sh
 $ ./get_helm.sh
 ```
 
+# wordpress - local-wp-2 - version=27.1.7
+
+```code
+404  echo "reinstall wordpress diff chart version 27.1.7"
+  405  #helm install my-wordpress bitnami/wordpress --version 27.1.7
+  406  helm repo add bitnami https://charts.bitnami.com/bitnami
+  407  helm repo update
+  408  helm repo list
+  409  echo "browser: https://repo.broadcom.com/bitnami-files/index.yaml/index.yaml"
+  410  help search repo wordpress
+  411  help repo search wordpress
+  412  helm repo search wordpress
+  413  helm search repo wordpress
+  414  helm search repo prometheus
+  415  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+  416  helm repo list
+  417  helm repo list --max-col-width=20
+  418  helm repo list --max-col-width 20
+  419  helm search repo prometheus --max-col-width 20
+  420  helm show chart bitnami/wordpress
+  421  helm search repo cms
+  422  helm search repo wordpress --version
+  423  helm search repo wordpress --versions
+  424  helm search repo wordpress --versions | less
+  425  helm show readme bitnami/wordpress
+  426  helm show values bitnami/wordpress
+  427  helm --help
+  428  helm repo upate
+  429  helm repo update
+  430  get pod
+  431  echo "install wordpress"
+  432  helm repo list
+  433  kubectl version
+  434  kubectl config current-context
+  435  helm search repo wordpress
+  436  helm install local-wp bitnami/wordpress --version=27.1.7
+  437  helm install local-wp-2 bitnami/wordpress --version=27.1.7
+  438  kubectl get pod
+  439  kubectl stop pod local-wp-wordpress-c76c778fc-4rmmr
+  440  kubectl help
+  441  kubectl delete help
+  442  kubectl delete --help
+  443  kubectl get pod
+  444  kubectl get svc
+  445  kubectl get secret
+  446  kubectl get pod
+  447  kubectl describe pod local-wp-wordpress-c76c778fc-4rmmr
+  448  kubectl get deploy
+  449  kubectl expose deploy local-wp-2-wordpress --type=NodePort
+  450  kubectl expose deploy local-wp-2-wordpress --type=NodePort --name=local-wp-2
+  451  kubectl get svc
+  452  minikube service local-wp-2
+  453  ls
+  454  cd helm-fbte/
+  455  ls -l
+  456  vi install-helm-local-wp-2.sh
+  457  history
+pl@NYC-WI-902H3J3:~/pjs/repos/helm-fbte$
+```
+
+# wordpress - local-wp - version=27.1.8
 ```code
 #/bin/bash
 
-helm install local-wp bitnami/wordpress --version=27.1.8 -- set "mariadb.auth.rootPassword=myawesomepassword" -- set "mariadb.auth.password=myuserpassword"
+helm install local-wp bitnami/wordpress --version=27.1.8 --set "mariadb.auth.rootPassword=myawesomepassword" -- set"mariadb.auth.password=myuserpassword"
+# Retrieve used commands - WSL Ubuntu on Windows 11
+#
+pl@NYC-WI-902H3J3:~/pjs/repos/helm-fbte$ history | egrep 'helm|kubectl|minikube|docker' > helm-commands-history.txt
+
+   10  docker run -d -p 80:8080 swaggerapi/swagger-editor
+  108  cd k8s-minikube/
+  110  vi intall-docker-ubuntu-wsl-env.sh
+  111  helm get notes local-wp | grep VERSION
+  113  cd /mnt/c/pjs/k8s-minikube/
+  115  helm install local-wp bitnami/wordpress --version=27.1.8         -- set "mariadb.auth.roorPassword=myawesomepassword"         -- set "mariadb.auth.password=myuserpassword"
+  116  helm install local-wp bitnami/wordpress --version=27.1.8         -- set "mariadb.auth.roorPassword=myawesomepassword"         -- set "mariadb.auth.password=myuserpassword"
+  117  helm install local-wp bitnami/wordpress --version=27.1.8         -- set "mariadb.auth.roorPassword=myawesomepassword"         -- set "mariadb.auth.password=myuserpassword"
+  119  helm install local-wp bitnami/wordpress --version=27.1.8 -- set "mariadb.auth.rootPassword=myawesomepassword" -- set "mariadb.auth.password=myuserpassword"
+  120  kubectl get secret local-wp-wordpress -o jsonpath='{.data.wordpress-password}' | base64 -d
+  121  helm show values
+  122  helm show values bitnami/wordpress
+  125  helm get values local-wp
+  126  helm get values local-wp --all
+  127  helm get metadata local-wp
+  128  kubectl pod --watch
+  129  kubectl get pod --watch
+  130  kubectl get secrets
+  131  kubectl get secret local-wp-mariadb
+  132  kubectl describe secret local-wp-mariadb
+  142  mkdir helm-course
+  143  cd helm-course/
+  145  cd /mnt/c/pjs/k8s-minikube/
+  147  kubectl get secret local-wp-mariadb
+  148  kubectl get pod --watch
+  149  kubectl describe secret local-wp-mariadb
+  150  history | grep kubectl
+  151  helm get notes
+  152  helm get meta-data local-wp
+  153  helm -?
+  154  helm help
+  155  kubectl help
+  156  history | grep helm
+  157  helm get meta-data local-wp
+  158  kubectl
+  159  kubectl get pos -A
+  160  kubectl get pod -A
+  162  kubectl describe secret local-wp-mariadb
+  163  helm help
+  164  helm list
+  165  history | grep 'helm install
+  166  history | grep 'helm install'
+  167  history | grep helm
+  170  kubectl config current-context
+  171  helm search repo wordpress
+  172  helm get notes
+  173  helm get notes wordpress
+  174  history | grep helm
+  175  helm get notes
+  176  helm get notes local-wp
+  178  vi helm-install-local-wp.sh
+  182  cd k8s-minikube/
+  184  vi intall-docker-ubuntu-wsl-env.sh 
+  185  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  186  chmod +x kubectl
+  187  sudo mv kubectl /usr/local/bin/
+  188  vi intall-docker-ubuntu-wsl-env.sh 
+  189  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  190  sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+  191  vi intall-docker-ubuntu-wsl-env.sh 
+  192  minikube start --driver=docker
+  193  minikube status
+  194  kubectl version
+  195  kubectl get pod -a
+  196  kubectl get pod -A
+  197  vi intall-docker-ubuntu-wsl-env.sh 
+  198  $ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+  199  $ chmod 700 get_helm.sh
+  200  $ ./get_helm.sh
+  202  $ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+  203  curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+  205  $ chmod 700 get_helm.sh
+  206  chmod 700 get_helm.sh
+  207  $ ./get_helm.sh
+  208  ./get_helm.sh
+  209  vi intall-docker-ubuntu-wsl-env.sh 
+  210  helm version
+  211  helm repo add bitnami https://charts.bitnami.com/bitnami
+  212  helm repo update
+  213  helm search repo wordpress
+  214  helm search repo prometheus
+  215  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+  216  helm search repo prometheus
+  217  helm repo list
+  218  helm search repo prometheus
+  219  helm search repo prometheus --max-col-width 20
+  221  helm show chart bitnami/wordpress
+  222  helm show chart bitnami/wordpress --versions
+  223  helm serch repo wordpress --versions
+  224  helm search repo wordpress
+  225  helm search repo wordpress --versions
+  226  helm search repo cms
+  227  helm serch repo wordpress --versions
+  228  helm serch repo bitnami/wordpress
+  229  helm show repo bitnami/wordpress
+  230  helm show bitnami/wordpress
+  231  helm show chart bitnami/wordpress
+  232  helm show readme bitnami/wordpress
+  233  helm show values bitnami/wordpress
+  234  helm --help
+  235  helm repo --help
+  236  helm repo update
+  237  helm repo list
+  238  kubectl version
+  239  kubectl config current-context
+  240  helm search repo wordpress
+  241  helm install --help
+  242  helm search repo wordpress
+  243  helm install local-wp bitnami/wordpress --version=27.1.8
+  245  kubectl get pod
+  246  kubectl get svc
+  247  kubectl get secret
+  248  kubectl describe secret local-wp-wordpress
+  249  kubectl describe secret sh.helm.release.v1.local-wp.v1
+  250  kubectl get pod
+  251  kubectl describe pod local-wp-wordpress-c76c778fc-nvjgq
+  252  kubectl get deploy
+  253  kubectl expose deploy local-wp-wordpress --type=NodePort
+  254  kubectl expose deploy local-wp-wordpress --type=NodePort --name=local-wp
+  255  kubectl get svc
+  256  minikube service local-wp
+  259  ls -l intall-docker-ubuntu-wsl-env.sh
+  260  cd /mnt/c/pjs/k8s-minikube/
+  261  ls -l intall-docker-ubuntu-wsl-env.sh
+  262  cat intall-docker-ubuntu-wsl-env.sh
+  263  minikube start --driver=docker
+  288  ls helm-course/
+  289  mv helm-course/ repos/
+  305  history | egrep 'helm|kubectl'
+  306  history | egrep 'minikube|docker'
+  308  ls -l /mnt/c/pjs/k8s-minikube/
+  313  ls -l helm-course/
+  314  mkdir helm-fbte
+  315  cp -p /mnt/c/pjs/k8s-minikube/ helm-fbte/
+  316  cd helm-
+  317  rmdir helm-course/
+  318  cd helm-fbte/
+  320  cp -p /mnt/c/pjs/k8s-minikube/* helm-fbte/
+  321  cp -p /mnt/c/pjs/k8s-minikube/* .
+  323  history | egrep 'helm|kubectl|minikube|docker'
+  324  history | egrep 'helm|kubectl|minikube|docker' > helm-commands-history.txt
+
+pl@NYC-WI-902H3J3:~/pjs/repos/helm-fbte$
 ```
 
 ```code
