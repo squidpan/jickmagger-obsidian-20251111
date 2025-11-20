@@ -11,6 +11,10 @@ title: Java Spring framework and Spring Boot
 ---
 # Summary
 
+[[vscode]]
+[[intelliJ-IDEA]]
+- need to signin to Github from within IDE before cloning
+- 
 
 
 # Source code links
