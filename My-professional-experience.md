@@ -6,7 +6,7 @@
 NPQS distributes consolidated streaming prices to market data price consumers both on prem and in the cloud.
 We are in the process of migrating the application to the cloud from the current on-prem only environment.
 There are 4 components:
-- Prime Linux server with Oracle backend - on prem
+- Prime Linux server with Oracle backend- on prem
 - Feeding into OCP4, on Private Cloud - on prem
 - AWS Cloud - Streaming and Rest API
 - Mulesoft API Proxy - Rest API
@@ -31,7 +31,7 @@ From requirements to pre-QA environment, I support support our scrum master and 
 
 Prior to the Bank, my background includes starting out as a software consulting engineer in the CAD/CAM mechanical design space for automotive and aerospace industries, business analysis and project management in the insurance industry.
 
-
+Currently, I 
 
 One of my first software testing/QA job was at Foot shoepheria which is an e-commerce website. I worked in a team of 12 people. We had 5 testers, 5 developers, one business analyst and a project manager.
 
