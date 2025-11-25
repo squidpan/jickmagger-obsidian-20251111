@@ -3,15 +3,21 @@
 
 ### First version
 
+NPQS distributes consolidated streaming prices to market data price consumers both on prem and in the cloud.
+There are 4 components:
+- Prime Linux server with Oracle backend - on prem
+- Feeding into OCP4, on Private Cloud - on prem
+- AWS Cloud - Streaming and Rest API
+- Mulesoft API Proxy - Rest API
+
 I am currently working as a release coordinator at FRBNY where my primary responsibility is to ensure every Prime market data pricing service release is successfully deployed to higher environments (QA, PROD).
 In the Pre-QA environment, I conduct code reviews, test all deployment commands and steps (manual, automatic), revise documentation accordingly and perform basic functional and non-functional  testing as part of cutting a release tag for QA. I also support Scrum master and PMS with writing JIRA stories from requirements.
 
-- 
-- Turn requirements to prioritized JIRA stories into a given release
-- Document key functional implementation in release, if any needs communicated to stakeholders
-- Functional tests
-	- Test Suspect data cleaning and distribution
-	- Perform regression test using Data quality tools that compares prices generated from different releases to ensure there is no degradation in data quality
+- Turn requirements to prioritized JIRA stories into release items
+- Document key functional implementation features in release, if any needs communicated to stakeholders
+- Perform functional and non-functional tests
+	- Suspect data cleaning and distribution
+	- Perform regression test between two releases via Data quality tools that compare prices from consecutive releases to detect any degradation in data quality
 	
 
 ### For someone with experience
