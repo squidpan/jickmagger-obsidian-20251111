@@ -18,7 +18,7 @@ type:
 
 Hi Rafay,
 
-The most significant part of my stay at the Bank was the front row seat at the evolution of NPQS - a systematic transformation of a custom pricing system to cloud native pricing services that are resilient. Many of the exciting part of my job was when I helped you draw architectural and technical information that warrant stakeholders review and approvals. 
+The most significant part of my time at the Bank was at the front row seat to the remarkable evolution of NPQS - a systematic transformation of a custom Price Quote System to a set of resilient cloud native pricing services. Many of the exciting part of my job came during the times you let me help you with putting together architectural and technical information that warrant stakeholders review and approvals.
 
 This was the best job I ever had. None of this would have been possible had I not been on the squad.
 Thank you for the job, Rafay.
