@@ -18,9 +18,9 @@ type:
 
 Hello squad,
 
-Here is a quick note to tell you that I had a great time working in the squad with all you of guys. I wish you all the best on the exciting journey to the cloud. You guys are a resilient bunch that always deliver. 
+Here is a quick note to tell you that I had a great time working in the squad with all you of guys. I wish you all the best on your exciting journey to the cloud. You guys are a resilient bunch that always deliver. I couldn't have been part of a better team.
 
-Until the next time.
+Thank you.
 Farewell.
 paul
 
