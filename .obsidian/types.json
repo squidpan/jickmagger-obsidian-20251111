@@ -53,6 +53,7 @@
     "acquired": "date",
     "title": "text",
     "subject": "text",
-    "apps": "multitext"
+    "apps": "multitext",
+    "recipients": "multitext"
   }
 }

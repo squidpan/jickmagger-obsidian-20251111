@@ -10,7 +10,7 @@ topics:
   - "[[Helm]]"
   - "[[Kubernetes]]"
 created: 2025-11-14
-title:
+title: "Helm: Install docker minikube kubectl"
 last: 2025-11-14
 subject: "Helm: Install docker minikube kubectl"
 ---
