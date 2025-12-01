@@ -3,7 +3,7 @@
 
 ### First version
 
-NPQS distributes consolidated streaming prices to market data price consumers both on prem and in the cloud.
+NPQS distributes **consolidated streaming prices to market data price consumers** both on prem and in the cloud.
 We are in the process of migrating the application to the cloud from the current on-prem only environment.
 There are 4 components:
 - Prime Linux server with Oracle backend- on prem
