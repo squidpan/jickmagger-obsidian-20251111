@@ -31,8 +31,9 @@ From requirements to pre-QA environment, I support support our scrum master and 
 
 Prior to the Bank, my background includes starting out as a software consulting engineer in the CAD/CAM mechanical design space for automotive and aerospace industries, business analysis and project management in the insurance industry.
 
-Currently, I 
+With my experience mostly in the end to end release cycles of Linux backed client server applications and motivated by the current Cloud migration effort at the Bank, I have been taking steps to broaden my skillset in working with cloud native technology - Deploying applications in k8s (CI/CD), Rest API testing, etc. I have been following the Udemy courses with the personal goal to set up a homelab environment.
 
+### lifted from udemy
 One of my first software testing/QA job was at Foot shoepheria which is an e-commerce website. I worked in a team of 12 people. We had 5 testers, 5 developers, one business analyst and a project manager.
 
 My main job as a manual tester was to translate the business requirements from the marketing team, create a test plan , get it approved by our manager and then come up with the test cases accordingly.
