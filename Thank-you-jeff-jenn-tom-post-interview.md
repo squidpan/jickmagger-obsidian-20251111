@@ -26,7 +26,7 @@ Given that the the scope of the project is based on the current support to top t
 
 I have experience putting together how-to guides that are task, troubleshooting and product-oriented based on discussions with SMEs at different points of my career. Additionally, as part of the cloud migration at the Fed, I have worked on the initial phase of defining and documenting Rest API endpoints using Swagger (openapi specification 3.0) to define market data pricing endpoints. The endpoints and payloads were designed and mapped from the Oracle table view fields that are currently distributed to consumers.
 
-My background working working as an implementation engineer and business analyst would allow me to help the team in documenting the details of the current process, map them dashboard actions, document(e.g. screenshots and instructions) and test. I look forward to hearing back from you and have the opportunity to learn more about the project. Please do not hesitate to reach out for any questions or comments.
+My background working working as an implementation engineer and business analyst would allow me to help the team in documenting the details of the current process, map them to dashboard actions, document(e.g. screenshots and instructions) and test. I look forward to hearing back from you and have the opportunity to learn more about the project. Please do not hesitate to reach out for any questions or comments.
 
 Thank you.
 Paul
