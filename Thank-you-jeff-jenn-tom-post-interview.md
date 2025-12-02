@@ -21,7 +21,7 @@ type:
 Thank you for taking the time to speak with me today and discuss the current effort to leverage the dashboard UI as a self-service tool for Pulse Data users. By self-service, I understand it as being a site where users can onboard and configure access to needed functionality without IT assistance. Would it be correct to also characterize this as mapping the current manual user onboarding activities as interactions in dashboard UI, document and test
 
 
-Given the the scope of the project is based on current practices supporting top tier clients, it should provide solid use case coverage to document and test. Please let me know if I misunderstood anything.
+Given the the scope of the project is based on current support to top tier clients, it must provide a solid use case coverage that need to be mapped and tested using the UI. Please let me know if I misunderstood anything.
 
 
 
