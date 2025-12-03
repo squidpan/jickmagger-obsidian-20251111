@@ -5,7 +5,7 @@ author: []
 rating:
 topics:
   - Thank you note post interview
-last: 2025-12-01
+last: 2025-12-02
 tags:
   - letter
 created: 2025-12-01
